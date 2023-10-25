@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6FA67177-8868-462A-AA34-6547ADC97EEB}</ProjectGuid>
+    <ProjectGuid>{DED6B72B-7354-490F-AB5E-9A9761A59D7B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>TaskListApp</RootNamespace>
-    <AssemblyName>TaskListApp</AssemblyName>
+    <RootNamespace>TaskListApplication</RootNamespace>
+    <AssemblyName>TaskListApplication</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
