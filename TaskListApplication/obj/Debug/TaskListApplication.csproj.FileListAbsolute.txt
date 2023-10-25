@@ -1,0 +1,10 @@
+H:\Self-development\IT ACTIVITIES\PROjects\TaskList\TaskListApplication\bin\Debug\TaskListApplication.exe.config
+H:\Self-development\IT ACTIVITIES\PROjects\TaskList\TaskListApplication\bin\Debug\TaskListApplication.exe
+H:\Self-development\IT ACTIVITIES\PROjects\TaskList\TaskListApplication\bin\Debug\TaskListApplication.pdb
+H:\Self-development\IT ACTIVITIES\PROjects\TaskList\TaskListApplication\obj\Debug\TaskListApplication.csproj.AssemblyReference.cache
+H:\Self-development\IT ACTIVITIES\PROjects\TaskList\TaskListApplication\obj\Debug\TaskListApplication.Form1.resources
+H:\Self-development\IT ACTIVITIES\PROjects\TaskList\TaskListApplication\obj\Debug\TaskListApplication.Properties.Resources.resources
+H:\Self-development\IT ACTIVITIES\PROjects\TaskList\TaskListApplication\obj\Debug\TaskListApplication.csproj.GenerateResource.cache
+H:\Self-development\IT ACTIVITIES\PROjects\TaskList\TaskListApplication\obj\Debug\TaskListApplication.csproj.CoreCompileInputs.cache
+H:\Self-development\IT ACTIVITIES\PROjects\TaskList\TaskListApplication\obj\Debug\TaskListApplication.exe
+H:\Self-development\IT ACTIVITIES\PROjects\TaskList\TaskListApplication\obj\Debug\TaskListApplication.pdb

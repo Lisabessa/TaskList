@@ -122,7 +122,7 @@ namespace TaskListApplication
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.AliceBlue;
-            this.button6.Location = new System.Drawing.Point(201, 226);
+            this.button6.Location = new System.Drawing.Point(199, 226);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(185, 33);
             this.button6.TabIndex = 19;
@@ -143,7 +143,7 @@ namespace TaskListApplication
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Honeydew;
-            this.button1.Location = new System.Drawing.Point(10, 226);
+            this.button1.Location = new System.Drawing.Point(8, 226);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(185, 33);
             this.button1.TabIndex = 10;
