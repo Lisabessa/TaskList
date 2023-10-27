@@ -29,8 +29,8 @@ namespace TaskListApplication
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //OneTask new_task = new OneTask(textBox1.Text, dateTimePicker1.Value, )
             
-            textBox1.Text
         }
     }
 }
