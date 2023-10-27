@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 namespace TaskListApplication
 {
     [Serializable]
-    class OneTask: IComparable<OneTask>
+    class OneTask : IComparable<OneTask>
     {
         public string Task_name;
         public DateTime Deadline;
         public int Priority;
 
         public OneTask(string Task_name, DateTime Deadline, int Priority)
-        {
+         {
             this.Task_name = Task_name;
             this.Deadline = Deadline;
             this.Priority = Priority;
         }
-        
+
 
         public int CompareTo(OneTask other)
         {
@@ -37,5 +37,6 @@ namespace TaskListApplication
             }
         }
     }
+
     
 }

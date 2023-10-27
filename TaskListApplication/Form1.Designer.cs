@@ -31,10 +31,6 @@ namespace TaskListApplication
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label13 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.button6 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -45,6 +41,10 @@ namespace TaskListApplication
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label13 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -81,44 +81,6 @@ namespace TaskListApplication
             this.tabPage1.Text = "Task creator";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(392, 487);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Show tasks";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Monotype Corsiva", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.Location = new System.Drawing.Point(277, 316);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(136, 13);
-            this.label13.TabIndex = 11;
-            this.label13.Text = "Made by Elizaveta Plavinskaya";
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(392, 487);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Search tasks";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(392, 487);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Save to file";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.AliceBlue;
@@ -149,6 +111,7 @@ namespace TaskListApplication
             this.button1.TabIndex = 10;
             this.button1.Text = "Create new task";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dateTimePicker1
             // 
@@ -216,6 +179,44 @@ namespace TaskListApplication
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Middle";
             this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(392, 275);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Show tasks";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(392, 275);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Search tasks";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(392, 275);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Save to file";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Monotype Corsiva", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.Location = new System.Drawing.Point(277, 316);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(136, 13);
+            this.label13.TabIndex = 11;
+            this.label13.Text = "Made by Elizaveta Plavinskaya";
             // 
             // Form1
             // 
