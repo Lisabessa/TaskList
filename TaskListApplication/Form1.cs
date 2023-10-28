@@ -35,10 +35,6 @@ namespace TaskListApplication
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -89,6 +85,42 @@ namespace TaskListApplication
             else
             {
                 MessageBox.Show("No task selected");
+            }
+        }
+
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            listView2.Items.Clear();
+            foreach(OneTask task in tasklist.task_list)
+            {
+                string info = task.CheckName(textBox2.Text);
+                if(info != "")
+                {
+                    listView2.Items.Add(info);
+                }
+            }
+            
+        }
+
+        private void comboBox1_MouseCaptureChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            listView2.Items.Clear();
+
+            int priority = 3 - comboBox1.SelectedIndex;
+
+            foreach (OneTask task in tasklist.task_list)
+            {
+                string info = task.CheckPriority(priority);
+                if (info != "")
+                {
+                    listView2.Items.Add(info);
+                }
             }
         }
     }

@@ -58,7 +58,33 @@ namespace TaskListApplication
 
             return report;
         }
+
+        public string CheckName(string task_name)
+        {
+            string report = "";
+
+            if (this.Task_name.Contains(task_name))
+            {
+                report += this.WriteLine();
+            }
+
+            return report;
+        }
+
+
+        public string CheckPriority(int priority)
+        {
+            string report = "";
+
+            if (this.Priority == priority)
+            {
+                report += this.WriteLine();
+            }
+
+            return report;
+        }
+
     }
 
-    
+
 }

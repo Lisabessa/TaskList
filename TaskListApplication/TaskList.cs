@@ -53,36 +53,6 @@ namespace TaskListApplication
              
         }
 
-        public string SearchName(string task_name)
-        {
-            string report = "";
-
-            foreach (OneTask task in task_list)
-            {
-                if (task.Task_name == task_name)
-                {
-                    report += task.WriteLine();
-                }
-            }
-
-            return report;
-        }
-
-        public string SearchPriority(int priority)
-        {
-            string report = "";
-
-            foreach (OneTask task in task_list)
-            {
-                if (task.Priority == priority)
-                {
-                    report += task.WriteLine();
-                }
-            }
-
-            return report;
-        }
-
         public void DoneTask(string task_name, DateTime deadline, int priority)
         {
             for (int i = 0; i < task_list.Count; i++)
