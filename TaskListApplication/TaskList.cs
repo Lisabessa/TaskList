@@ -37,22 +37,6 @@ namespace TaskListApplication
             return report;
         }
 
-        public string SearchDeadline(DateTime deadline)
-        {
-            string report = "";
-
-            foreach (OneTask task in task_list)
-            {
-                if(task.Deadline.Date == deadline.Date)
-                {
-                    report += task.WriteLine();
-                }
-            }
-
-            return report;
-             
-        }
-
         public void DoneTask(string task_name, DateTime deadline, int priority)
         {
             for (int i = 0; i < task_list.Count; i++)

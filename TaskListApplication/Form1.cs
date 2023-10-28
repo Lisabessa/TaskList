@@ -123,5 +123,19 @@ namespace TaskListApplication
                 }
             }
         }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+            listView2.Items.Clear();
+
+            foreach (OneTask task in tasklist.task_list)
+            {
+                string info = task.CheckDeadline(dateTimePicker2.Value);
+                if (info != "")
+                {
+                    listView2.Items.Add(info);
+                }
+            }
+        }
     }
 }

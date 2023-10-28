@@ -84,6 +84,20 @@ namespace TaskListApplication
             return report;
         }
 
+        public string CheckDeadline(DateTime deadline)
+        {
+            string report = "";
+
+            if (this.Deadline.Date == deadline.Date)
+            {
+                 report += this.WriteLine();
+            }
+
+            return report;
+
+        }
+
+
     }
 
 
