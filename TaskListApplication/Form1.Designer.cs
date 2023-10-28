@@ -45,6 +45,7 @@ namespace TaskListApplication
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label13 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -172,6 +173,7 @@ namespace TaskListApplication
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.listView1);
             this.tabPage2.Controls.Add(this.button6);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
@@ -212,12 +214,26 @@ namespace TaskListApplication
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.AliceBlue;
-            this.button6.Location = new System.Drawing.Point(102, 224);
+            this.button6.Location = new System.Drawing.Point(6, 236);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(185, 33);
+            this.button6.Size = new System.Drawing.Size(380, 33);
             this.button6.TabIndex = 20;
-            this.button6.Text = "Done this task";
+            this.button6.Text = "Done this tasks";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // listView1
+            // 
+            this.listView1.CheckBoxes = true;
+            this.listView1.FullRowSelect = true;
+            this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(6, 6);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(380, 224);
+            this.listView1.TabIndex = 21;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.List;
             // 
             // Form1
             // 
@@ -256,6 +272,7 @@ namespace TaskListApplication
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.ListView listView1;
     }
 }
 

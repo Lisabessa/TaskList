@@ -9,7 +9,9 @@ namespace TaskListApplication
     [Serializable]
     class TaskList
     {
-        List<OneTask> task_list;
+        public List<OneTask> task_list { get; }
+
+        
         public TaskList()
         {
             task_list = new List<OneTask>();
@@ -21,27 +23,7 @@ namespace TaskListApplication
             this.task_list.Sort();
         }
 
-        public string WriteLine(OneTask task)
-        {
-            string report = "";
-
-            if (task.Priority == 3)
-            {
-                report += "!!! ";
-            }
-            else if (task.Priority == 2)
-            {
-                report += "!! ";
-            }
-            else
-            {
-                report += "! ";
-            }
-
-            report += task.Task_name + " before " + task.Deadline.ToString() + "\n";
-
-            return report;
-        }
+        
 
         public string Show()
         {
@@ -49,7 +31,7 @@ namespace TaskListApplication
 
             foreach(OneTask task in task_list)
             {
-                report += WriteLine(task);
+                report += task.WriteLine();
             }
 
             return report;
@@ -63,7 +45,7 @@ namespace TaskListApplication
             {
                 if(task.Deadline.Date == deadline.Date)
                 {
-                    report += WriteLine(task);
+                    report += task.WriteLine();
                 }
             }
 
@@ -79,7 +61,7 @@ namespace TaskListApplication
             {
                 if (task.Task_name == task_name)
                 {
-                    report += WriteLine(task);
+                    report += task.WriteLine();
                 }
             }
 
@@ -94,7 +76,7 @@ namespace TaskListApplication
             {
                 if (task.Priority == priority)
                 {
-                    report += WriteLine(task);
+                    report += task.WriteLine();
                 }
             }
 

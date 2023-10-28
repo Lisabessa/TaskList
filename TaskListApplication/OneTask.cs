@@ -36,6 +36,28 @@ namespace TaskListApplication
                 return 0;
             }
         }
+
+        public string WriteLine()
+        {
+            string report = "";
+
+            if (this.Priority == 3)
+            {
+                report += "!!! ";
+            }
+            else if (this.Priority == 2)
+            {
+                report += "!! ";
+            }
+            else
+            {
+                report += "! ";
+            }
+
+            report += this.Task_name + " before " + this.Deadline.ToString() + "\n";
+
+            return report;
+        }
     }
 
     

@@ -17,6 +17,17 @@ namespace TaskListApplication
         {
             InitializeComponent();
             tasklist = new TaskList();
+            RefreshList();
+        }
+
+        public void RefreshList()
+        {
+            listView1.Items.Clear();
+            foreach(OneTask task in tasklist.task_list)
+            {
+                listView1.Items.Add(task.WriteLine());
+            }
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -55,6 +66,30 @@ namespace TaskListApplication
                 MessageBox.Show("Task info is not full!");
             }
 
+            RefreshList();
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            
+            if(listView1.CheckedItems.Count != 0)
+            {
+                for(int i=0; i< listView1.CheckedItems.Count; i++)
+                {
+                    string task_string = listView1.CheckedItems[i].Text;
+                    List<string> string_list = task_string.Split(' ').ToList();
+                    int priority = string_list[0].Length;
+                    string name = string_list[1];
+                    DateTime deadline = DateTime.Parse(string_list[3]);
+                    tasklist.DoneTask(name, deadline, priority);
+                }
+                RefreshList();
+            }
+            else
+            {
+                MessageBox.Show("No task selected");
+            }
         }
     }
 }
