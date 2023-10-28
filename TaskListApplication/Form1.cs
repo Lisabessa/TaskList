@@ -89,7 +89,11 @@ namespace TaskListApplication
                     List<string> string_list = task_string.Split(' ').ToList();
                     int priority = string_list[0].Length;
                     string name = string_list[1];
-                    DateTime deadline = DateTime.Parse(string_list[3]);
+                    for(int j = 2; j < string_list.Count - 3; j++)
+                    {
+                        name += " " + string_list[j];
+                    }
+                    DateTime deadline = DateTime.Parse(string_list[string_list.Count - 2]);
                     tasklist.DoneTask(name, deadline, priority);
                 }
                 RefreshList();

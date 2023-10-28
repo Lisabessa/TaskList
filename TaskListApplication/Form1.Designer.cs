@@ -341,7 +341,7 @@ namespace TaskListApplication
             // 
             this.button2.BackColor = System.Drawing.Color.Aqua;
             this.button2.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(20, 29);
+            this.button2.Location = new System.Drawing.Point(20, 42);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(353, 74);
             this.button2.TabIndex = 9;
