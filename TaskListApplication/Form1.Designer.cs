@@ -55,6 +55,7 @@ namespace TaskListApplication
             this.label13 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -306,6 +307,7 @@ namespace TaskListApplication
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.button3);
             this.tabPage4.Controls.Add(this.button2);
             this.tabPage4.Controls.Add(this.button4);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
@@ -329,7 +331,7 @@ namespace TaskListApplication
             // 
             this.button4.BackColor = System.Drawing.Color.Linen;
             this.button4.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(20, 149);
+            this.button4.Location = new System.Drawing.Point(20, 104);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(353, 74);
             this.button4.TabIndex = 8;
@@ -341,13 +343,25 @@ namespace TaskListApplication
             // 
             this.button2.BackColor = System.Drawing.Color.Aqua;
             this.button2.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(20, 42);
+            this.button2.Location = new System.Drawing.Point(20, 24);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(353, 74);
             this.button2.TabIndex = 9;
             this.button2.Text = "Save tasks to file";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.HotPink;
+            this.button3.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.Location = new System.Drawing.Point(20, 184);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(353, 74);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "Clear all tasks";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
@@ -399,6 +413,7 @@ namespace TaskListApplication
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 
