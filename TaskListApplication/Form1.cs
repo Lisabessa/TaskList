@@ -7,17 +7,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
 namespace TaskListApplication
 {
     public partial class Form1 : Form
     {
-        TaskList tasklist;
+        TaskList tasklist = new TaskList();
+        StreamWriter sw;
+        BinaryFormatter bf = new BinaryFormatter();
         public Form1()
         {
             InitializeComponent();
-            tasklist = new TaskList();
-            RefreshList();
+
+            if(File.Exists("Task_list") == true)
+            {
+                using(Stream output1 = File.OpenRead("Task_list"))
+                {
+                    tasklist = (TaskList)bf.Deserialize(output1);
+                    RefreshList();
+                }
+            }
+            
         }
 
         public void RefreshList()
@@ -135,6 +147,27 @@ namespace TaskListApplication
                 {
                     listView2.Items.Add(info);
                 }
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            using (Stream output1 = File.Create("Task_list"))
+            {
+                bf.Serialize(output1, tasklist);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog fbd = new FolderBrowserDialog();
+            fbd.ShowDialog();
+            if(fbd.SelectedPath != "")
+            {
+                sw = new StreamWriter(fbd.SelectedPath + "\\TaskList.txt", true);
+                string line = tasklist.Show();
+                sw.WriteLine(line);
+                sw.Close();
             }
         }
     }
