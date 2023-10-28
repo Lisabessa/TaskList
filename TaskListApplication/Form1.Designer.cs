@@ -31,7 +31,6 @@ namespace TaskListApplication
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button6 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -45,8 +44,10 @@ namespace TaskListApplication
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label13 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -63,7 +64,6 @@ namespace TaskListApplication
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button6);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.dateTimePicker1);
@@ -81,16 +81,6 @@ namespace TaskListApplication
             this.tabPage1.Text = "Task creator";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.AliceBlue;
-            this.button6.Location = new System.Drawing.Point(199, 226);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(185, 33);
-            this.button6.TabIndex = 19;
-            this.button6.Text = "Done this task";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -107,7 +97,7 @@ namespace TaskListApplication
             this.button1.BackColor = System.Drawing.Color.Honeydew;
             this.button1.Location = new System.Drawing.Point(8, 226);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(185, 33);
+            this.button1.Size = new System.Drawing.Size(367, 33);
             this.button1.TabIndex = 10;
             this.button1.Text = "Create new task";
             this.button1.UseVisualStyleBackColor = false;
@@ -182,6 +172,7 @@ namespace TaskListApplication
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.button6);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -218,6 +209,16 @@ namespace TaskListApplication
             this.label13.TabIndex = 11;
             this.label13.Text = "Made by Elizaveta Plavinskaya";
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.AliceBlue;
+            this.button6.Location = new System.Drawing.Point(102, 224);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(185, 33);
+            this.button6.TabIndex = 20;
+            this.button6.Text = "Done this task";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -231,6 +232,7 @@ namespace TaskListApplication
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,7 +242,6 @@ namespace TaskListApplication
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -254,6 +255,7 @@ namespace TaskListApplication
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button button6;
     }
 }
 
